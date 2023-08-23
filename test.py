@@ -1,22 +1,18 @@
-import random
+# quit가 나올때까지 정수를 입력받아 각 정수의 약수를 출력
+# 10
+# 6
+# 36
+# 87
+# 23
+# 40
+# quit
+# 10의 약수 : [1 2 5 10]
+# 6의 약수 : [1 2 3 6]
+# 36의 약수 : []
 
-r = int(random.randint(20, 50))
-
-print(r)
-for i in range(r):
-    if '33' in str(i):
-        print('짝짝')
-    elif '36' in str(i):
-        print('짝짝')
-    elif '39' in str(i):
-        print('짝짝')
-    elif i%10 == 0:
-        print('뽀' * (i//10),'숑')
-    elif '3' in str(i):
-        print('짝')
-    elif '6' in str(i):
-        print('짝')
-    elif '9' in str(i):
-        print('짝')
-    else :
-        print(i)
+data = []
+str = ""
+while str != 'quit':
+    print('정수를 입력하세요 : ')
+    str = input()
+    data.append(str)
